@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tech Conference — Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="rz-body">
+    <nav id="rz-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">RZ TechConf</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#rzNavMenu"
+          aria-controls="rzNavMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="rzNavMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="speakers.html">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tickets.html">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sponsors.html">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="rz-hero">
+      <div id="rzHeroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rz-carousel">
+          <div class="carousel-item active">
+            <img src="img/rz-hero-1.jpg" class="d-block w-100" alt="Hero 1" />
+            <div class="carousel-caption d-none d-md-block rz-hero-caption">
+              <h1 class="display-5">Tech Conference 2026</h1>
+              <p>Innovate, Learn, Network — University Tech Summit</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/rz-hero-2.jpg" class="d-block w-100" alt="Hero 2" />
+            <div class="carousel-caption d-none d-md-block rz-hero-caption">
+              <h1 class="display-5">Keynotes & Workshops</h1>
+              <p>Hands-on sessions from industry leaders.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/rz-hero-3.jpg" class="d-block w-100" alt="Hero 3" />
+            <div class="carousel-caption d-none d-md-block rz-hero-caption">
+              <h1 class="display-5">Join Us</h1>
+              <p>Register now — seats are limited.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#rzHeroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#rzHeroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="rz-countdown-wrap">
+        <div id="rz-countdown" class="rz-countdown text-center">
+          <div><span id="rz-days">0</span><small>Days</small></div>
+          <div><span id="rz-hours">00</span><small>Hours</small></div>
+          <div><span id="rz-mins">00</span><small>Minutes</small></div>
+          <div><span id="rz-secs">00</span><small>Seconds</small></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="text-center">
+        <h2>Welcome to the University Tech Conference</h2>
+        <p class="lead">
+          A two-day event bringing students and professionals together to
+          explore the latest in software, AI, cloud, and product design.
+        </p>
+        <a href="tickets.html" class="btn btn-primary">Get Tickets</a>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center small">
+        &copy; <span id="rz-year"></span> RZ TechConf — University
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

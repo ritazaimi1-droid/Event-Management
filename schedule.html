@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Schedule — Tech Conference</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="rz-body">
+    <nav id="rz-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">RZ TechConf</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#rzNavMenu"
+          aria-controls="rzNavMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="rzNavMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="speakers.html">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tickets.html">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sponsors.html">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <h1>Event Schedule</h1>
+      <p class="text-muted">Click tabs to view each day.</p>
+
+      <ul class="nav nav-tabs" id="rzScheduleTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="day1-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#day1"
+            type="button"
+          >
+            Day 1
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="day2-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#day2"
+            type="button"
+          >
+            Day 2
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content p-3 border border-top-0" id="rzScheduleContent">
+        <div class="tab-pane fade show active" id="day1">
+          <h4>Day 1 — Keynotes & Workshops</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Session</th>
+                <th>Room</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>09:00</td>
+                <td>Opening Keynote</td>
+                <td>Main Hall</td>
+              </tr>
+              <tr>
+                <td>11:00</td>
+                <td>AI Workshop</td>
+                <td>Lab A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane fade" id="day2">
+          <h4>Day 2 — Talks & Panels</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Session</th>
+                <th>Room</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>09:30</td>
+                <td>Cloud Native Patterns</td>
+                <td>Room 101</td>
+              </tr>
+              <tr>
+                <td>14:00</td>
+                <td>Student Project Demos</td>
+                <td>Expo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-light py-4 text-center small">
+      &copy; <span id="rz-year"></span> RZ TechConf
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
