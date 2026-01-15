@@ -31,12 +31,14 @@ main {
 }
 
 .rz-countdown-wrap {
-  position: absolute;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 80;
+  position: static;
+  margin: 1rem auto 0;
+  left: auto;
+  transform: none;
+  z-index: auto;
   padding: 0;
+  text-align: center;
+  width: 100%;
 }
 .rz-countdown {
   display: inline-flex;
@@ -151,16 +153,35 @@ footer {
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.92);
     color: #fff;
+    justify-content: center;
+    overflow: visible;
   }
   .rz-countdown div {
-    min-width: 60px;
-    padding: 0.45rem;
+    flex: 1 1 22%;
+    min-width: 0;
+    padding: 0.35rem 0.45rem;
+    box-sizing: border-box;
+  }
+  .rz-countdown span {
+    font-size: 0.9rem;
+  }
+  .rz-countdown small {
+    font-size: 0.65rem;
   }
   .rz-speaker-card .card-img-top {
     height: 220px;
   }
   .rz-gallery-grid img {
     height: 110px;
+  }
+}
+
+@media (max-width: 420px) {
+  .rz-countdown div {
+    flex: 1 1 45%;
+  }
+  .rz-countdown span {
+    font-size: 0.85rem;
   }
 }
 
